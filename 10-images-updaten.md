@@ -1,5 +1,4 @@
 # Container update
-
 Met docker is het standaard om een complete container weg te gooien en opnieuw aan te maken wanneer er een image update beschikbaar is.  
 Als alternatief wordt er veel van Watchtower gebruik gemaakt (https://github.com/containrrr/watchtower) om dit te automatiseren.
 

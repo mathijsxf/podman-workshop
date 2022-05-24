@@ -14,7 +14,6 @@ systemctl status voorbeeldcontainer
 Opvallend is dat hier `--new` gebruikt wordt, hiermee schakel je de systemd unit tussen het starten/stoppen van een bestaande container en het iedere keer opnieuw aanmaken en verwijderen van een container.
 
 ## podman generate kube
-
 Naast het genereren van systemd unit files kan je met `podman generate kube` ook Kubernetes manifests genereren, hiermee kan je op een simpele manier een gebouwde pod vanuit Podman exporteren naar Kubernetes.
 
 [Images updaten >>>](10-images-updaten.md)

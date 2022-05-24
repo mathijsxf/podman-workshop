@@ -6,7 +6,6 @@ Omdat Podman naar compatibiliteit met Docker streeft bestaat er ook een podman-c
 In een podman-compose file definieer je verschillende zaken, services oftewel containers, netwerken, volumes en nog veel meer.
 
 # Voorbeeld YAML file (staat ook in examples)
-
 ```yaml
 version: "3.9"  # optional since v1.27.0
 services:
@@ -32,7 +31,7 @@ volumes:
   logvolume01: {}
 ```
 
-## Bronnen
+# Bronnen
 - https://docs.docker.com/compose/
 - https://github.com/containers/podman-compose
 - https://compose-spec.io/

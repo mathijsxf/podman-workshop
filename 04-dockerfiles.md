@@ -1,5 +1,4 @@
 # Dockerfiles
-
 Je kan zelf container images bouwen, dit doe je met een bouw manifest hierin geef je aan hoe de container er uit moet zien.  
 De filename voor deze manifests is `Dockerfile`, hierin plaats je de instructies die door Docker of in ons geval Podman worden uitgevoerd.  
 Iedere opdracht die in een Dockerfile beschreven staat maakt een losse layer aan binnen het container image, daarom zie je ook dat er veel van oneliners gebruik gemaakt wordt om de complexiteit van het aantal layers te beperken.
@@ -26,7 +25,7 @@ Deze kopieren we dan gewoon lekker uit de draaiende container naar onze lokale o
 Nadat we deze naar het lokale filesysteem hebben gekopieerd kunnen we de container weggooien met `podman rm -f <containernaam>`  
 En kunnen we de container opstarten met onze eigen configuratie die we kunnen aanpassen zonder iedere keer het image opnieuw te hoeven bouwen door nogmaals een container uit te voeren met `podman run --detach --publish 8080:80 --volume $PWD/nginx.conf:/etc/nginx/nginx.conf:ro localhost/workshop/nginx`
 
-## Bronnen
+# Bronnen
 - https://docs.docker.com/engine/reference/builder/
 
 [Netwerken en Volumes >>>](05-netwerken-volumes.md)

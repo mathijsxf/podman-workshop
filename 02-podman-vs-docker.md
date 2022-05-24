@@ -10,7 +10,7 @@ Wat is Podman?
 - nieuwe container engine, als eerste beschikbaar in Fedora/Red Hat, nu ook in Ubuntu 22.04
 - bestaat uit een client en een daemon maar gebruikt deze alleen voor de REST API
 - kan containers draaien als meer users dan alleen `root`
-- heeft zijn eigen `podman-compose` tool die vergelijkbaar werkt
+- heeft zijn eigen `podman-compose` tool die vergelijkbaar werkt als docker-compose
 - kan gebruik maken van OCI compatible runtimes zoals crun, runc, runv
 
 # Bronnen
