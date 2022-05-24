@@ -1,0 +1,17 @@
+services:
+  webserver:
+    image: nginx
+    ports:
+      - 8080:80
+    networks:
+      - frontend
+      - backend
+  database:
+    image: mariadb
+    networks:
+      - backend
+    environment:
+      MARIADB_ROOT_PASSWORD: example
+networks:
+  frontend: {}
+  backend: {}
