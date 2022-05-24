@@ -55,7 +55,8 @@ Als laatste zal de Zabbix web container toegevoegd moeten worden, wat opvalt is 
 ```sh
 podman run --detach --name zabbix-web --pod zabbix --env ZBX_SERVER_HOST="localhost" --env PHP_TZ="Europe/Amsterdam"  --env DB_SERVER_HOST="127.0.0.1" --env MYSQL_USER="admin" --env MYSQL_PASSWORD="podmanws" zabbix/zabbix-web-nginx-mysql:alpine-trunk
 ```
-Nadat deze containet opgestart is kan je deze openen in de browser door naar http://localhost:8080 of het IP adres van de VM te gaam, hier kan eventueel nog een firewall tussen zitten, dit is op te lossen met `firewall-cmd --permanent --add` login met Admin/zabbix
+Nadat deze container opgestart is kan je deze openen in de browser door naar http://localhost:8080 of het IP adres van de VM te gaam, hier kan eventueel nog een firewall tussen zitten, dit is op te lossen met `firewall-cmd --permanent --add-port=8080/tcp` en dan `firewall-cmd --reload`.
+Je kan bij Zabbix inloggen met Admin/zabbix
 
 
 
