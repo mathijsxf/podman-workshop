@@ -1,21 +1,20 @@
 # Kernel namespaces
 Wat zijn kernel namespaces?
-- kernel feature
-- maakt het mogelijk om het systeem op te splitsen op verschillende onderdelen
-- enkele voorbeelden van namespaces
+- Kernel feature
+- Maakt het mogelijk om het systeem op te splitsen op verschillende onderdelen
+- Enkele voorbeelden van namespaces
   - PID namespaces voor scheiding van proces ID's
-  - user namespaces voor de scheiding van userbeheer
-  - mount namespaces voor mount points, vergelijkbaar met chroot
-  - net namespaces voor de scheiding op netwerk niveau
-  - andere namespaces: cgroup, IPC, UTS, time
+  - User namespaces voor de scheiding van userbeheer
+  - Mount namespaces voor mount points, vergelijkbaar met chroot
+  - Net namespaces voor de scheiding op netwerk niveau
+  - Andere namespaces zoals: cgroup, IPC, UTS, time
 
 ## Handige commando's
+- Alle gebruikte kernel namespaces op een systeem zijn te vinden met `lsns`
+- Alle cgroups op het systeem kunnen bekeken worden met `systemd-cgls`
+- Met `systemd-cgtop` krijg je een `top` stijl overzicht van cgroups
 
-- alle gebruikte kernel namespaces op een systeem zijn te vinden met `lsns`
-- alle cgroups op het systeem kunnen bekeken worden met `systemd-cgls`
-- met `systemd-cgtop` krijg je een `top` stijl overzicht van cgroups
-
-## Network namespace voorbeeld
+## Knutselen met network namespaces
 
 ```sh
 # maak nieuwe network namespace
@@ -52,13 +51,13 @@ ip netns delete workshop
 
 # Cgroups
 Wat zijn Control Groups (cgroups)?
-- kernel feature sinds 2007
-- geven de mogelijkheid om systeemresources in te delen en om limieten en prioriteit te configureren
+- Kernel feature sinds 2007
+- Geven de mogelijkheid om systeemresources in te delen en om limieten en prioriteit te configureren
 
 # Containers
 Wat zijn containers?
 - Containers zijn afgezonderde proces omgevingen
-- de scheiding die Containers mogelijk maakt word verzorgd door kernel namespaces
+- De scheiding die het concept van containers mogelijk maakt wordt verzorgd door kernel namespaces
 - Containers hebben hun eigen mount points, network interfaces, user ID's, process ID's, etcetera
 - Containers maken gebruik van vooraf gebouwde images als basis, deze bevatten bijvoorbeeld applicaties waarop mappen en bestanden gemount kunnen worden wanneer de container wordt uitgevoerd.
 
