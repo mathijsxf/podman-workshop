@@ -19,4 +19,8 @@ De installatie handleiding voor Windows staat hier https://github.com/containers
 # Testen na installatie
 Na installatie kan je checken of Podman werkt door `podman run --rm hello-world` te draaien.
 
+# Podman-desktop
+Op Mac OS wordt Docker geleverd als een desktop applicatie, Podman was tot nu toe nogal basis met Podman Machine wat via de terminal opgestart moet worden.  
+Er wordt nu ook gewerkt aan een Podman-desktop applicatie, het is nog aardig in ontwikkeling en kan gevonden worden op https://podman-desktop.io/
+
 [Dockerfiles >>>](04-dockerfiles.md)
