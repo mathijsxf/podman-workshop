@@ -1,5 +1,5 @@
 # Pods
-Pods zijn binnen Kubernetes en Podman de kleinste basiseenheid voor deployments, pods bestaan uit één of meerdere containers.
+Pods zijn binnen Kubernetes de kleinste basiseenheid voor deployments, pods bestaan uit één of meerdere containers, in Podman voorzien Pods een handige manier van aan elkaar knopen van meerdere containers.
 
 De basis van een pod bestaat uit een enkele container, namelijk de pause container.  
 Deze container reserveert de namespaces die door alle containers in de pod worden gedeeld.
