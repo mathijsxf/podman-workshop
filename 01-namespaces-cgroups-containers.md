@@ -53,6 +53,7 @@ ip netns delete workshop
 Wat zijn Control Groups (cgroups)?
 - Kernel feature sinds 2007
 - Geven de mogelijkheid om systeemresources in te delen en om limieten en prioriteit te configureren
+- Bestaat in een versie 1 en 2, versie 2 is een grote update van de architectuur en functionaliteit waardoor deze nog niet overal even goed wordt ondersteund
 
 # Containers
 Wat zijn containers?
