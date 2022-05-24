@@ -62,4 +62,4 @@ Je kan bij Zabbix inloggen met Admin/zabbix
 ## Bronnen
 - https://www.ianlewis.org/en/almighty-pause-container
 
-[Podman API en Remote Client >>>](08-api-remote-client.md)
+[Podman API en Remote Client >>>](08-podman-api-remote-client.md)
