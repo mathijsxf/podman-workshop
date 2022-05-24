@@ -15,4 +15,4 @@ Het updaten wordt ook automatisch uitgevoerd door de `podman-auto-update.service
 
 Mocht het updaten niet goed verlopen kan er ook een rollback worden gedaan met `podman auto-update --rollback`
 
-[Rootless containers](11-rootless.md)
+[Rootless containers >>>](11-rootless.md)

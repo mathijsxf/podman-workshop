@@ -17,4 +17,4 @@ Opvallend is dat hier `--new` gebruikt wordt, hiermee schakel je de systemd unit
 
 Naast het genereren van systemd unit files kan je met `podman generate kube` ook Kubernetes manifests genereren, hiermee kan je op een simpele manier een gebouwde pod vanuit Podman exporteren naar Kubernetes.
 
-[Images updaten](10-images-updaten.md)
+[Images updaten >>>](10-images-updaten.md)

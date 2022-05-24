@@ -9,4 +9,4 @@ Browse na installatie naar https://<VM IP>:9090, mocht deze niet werken dan zal 
 
 Accepteer tijdens het verbinden self signed certificaat van Cockpit, login met root of andere user, cockpit heeft een Podman Containers sectie waarin je Podman kan beheren.
 
-[Buildah en Skopeo](14-buildah-skopeo.md)
+[Buildah en Skopeo >>>](14-buildah-skopeo.md)

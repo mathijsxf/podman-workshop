@@ -17,4 +17,4 @@ In een podman-compose file definieer je verschillende zaken, services oftewel co
 - https://compose-spec.io/
 - https://github.com/docker/awesome-compose
 
-[Pods](07-pods.md)
+[Pods >>>](07-pods.md)

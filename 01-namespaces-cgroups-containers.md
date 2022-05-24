@@ -66,4 +66,4 @@ Wat zijn containers?
 - https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction
 - https://thenewstack.io/linux-cgroups-v2-brings-rootless-containers-superior-memory-management/
 
-[Podman vs Docker](02-podman-vs-docker.md)
+[Podman vs Docker >>>](02-podman-vs-docker.md)

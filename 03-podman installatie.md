@@ -19,4 +19,4 @@ De installatie handleiding voor Windows staat hier https://github.com/containers
 # Testen na installatie
 Na installatie kan je checken of Podman werkt door `podman run --rm hello-world` te draaien.
 
-[Dockerfiles](04-dockerfiles.md)
+[Dockerfiles >>>](04-dockerfiles.md)

@@ -59,7 +59,6 @@ Nadat deze container opgestart is kan je deze openen in de browser door naar htt
 Je kan bij Zabbix inloggen met Admin/zabbix
 
 
-
 ## Bronnen
 - https://www.ianlewis.org/en/almighty-pause-container
 

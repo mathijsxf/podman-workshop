@@ -19,4 +19,4 @@ Dit kan gedaan worden door `--network host` mee te geven in plaats van poorten t
 # Bronnen
 - https://podman.io/getting-started/network
 
-[Podman Compose](06-podman-compose.md)
+[Podman Compose >>>](06-podman-compose.md)
