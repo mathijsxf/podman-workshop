@@ -13,7 +13,7 @@ firewall-cmd --permanent --add-service=cockpit
 firewall-cmd --reload
 ```
 
-Browse na installatie naar https://<VM IP>:9090, accepteer tijdens het verbinden self signed certificaat van Cockpit, login met root of andere user, cockpit heeft een Podman Containers sectie waarin je Podman kan beheren.
+Browse na installatie naar https://<VM_IP>:9090, accepteer tijdens het verbinden self signed certificaat van Cockpit, login met root of andere user, cockpit heeft een Podman Containers sectie waarin je Podman kan beheren.
 Het enige wat hier nog ontbreekt is het aanmaken van Pods, dit dient te gebeuren op de command-line waarna de Pod zal verschijnen in Cockpit.
 
 # Bronnen
