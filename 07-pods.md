@@ -9,8 +9,9 @@ Voordeel hiervan is dat containers elkaar kunnen bereiken via `localhost` of `12
 
 # Poorten buiten pod bereikbaar maken
 Om poorten buiten een pod bereikbaar te maken moeten deze worden toegevoegd aan de opdracht waarmee de pod wordt gemaakt, dus bijvoorbeeld.  
-`podman pod create --name webapplication --publish 80:80,443:443`
-Wat opvalt bij deze opdracht is dat de poorten ieder twee keer worden vermeld, wanneer er een enkele poort staat zal er een random host poort worden gekozen die naar de opgegeven poort in de pod wordt doorgestuurd.
+`podman pod create --name webapplication --publish 80:80,443:443`  
+Wat opvalt bij deze opdracht is dat de poorten ieder twee keer worden vermeld, wanneer er een enkele poort staat zal er een random host poort worden gekozen die naar de opgegeven poort in de pod wordt doorgestuurd.  
+Op dit moment is het alleen mogelijk om bij het aanmaken van een Pod de poorten die van buiten bereikbaar moeten zijn te definieren.
 
 # Zabbix in pod
 ## Pod
