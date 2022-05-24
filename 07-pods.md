@@ -14,6 +14,7 @@ Wat opvalt bij deze opdracht is dat de poorten ieder twee keer worden vermeld, w
 Op dit moment is het alleen mogelijk om bij het aanmaken van een Pod de poorten die van buiten bereikbaar moeten zijn te definieren.
 
 # Zabbix in pod
+Een voorbeeld van een verzameling containers die met elkaar samen moeten werken en daardoor best in een Pod geplaatst kunnen worden is een Zabbix deployment, dit voorbeeld is echter geen valide voorbeeld voor een deployment in een Kubernetes cluster aangezien we hier de Zabbix onderdelen samen met de database in een Pod gaan plaatsen.
 ## Pod
 Maak een pod voor Zabbix
 ```sh
