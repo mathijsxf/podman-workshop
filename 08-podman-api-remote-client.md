@@ -8,6 +8,9 @@ Hierna kan je met `podman --connection workshop info` informatie van het remote 
 Aanwezige remote connections kan je inzien met `podman system connection list`, met `podman system connection default <naam>` kan je een andere standaard remote verbinding selecteren.
 
 ## Podman REST API service
-Het is ook mogelijk om de Podman REST API service via een TCP poort beschikbaar te maken, dit kan bijvoorbeeld handmatig met de opdracht `podman system service --time=0 tcp://localhost:8888`
+Het is ook mogelijk om de Podman REST API service via een TCP poort beschikbaar te maken, dit kan bijvoorbeeld handmatig met de opdracht `podman system service --time=0 tcp://localhost:8888`, lokaal is deze dan uit te vragen met `curl`
+
+# Bronnen
+- https://middlewaretechnologies.in/2020/11/how-to-use-podman-rest-api-service-to-query-and-manage-linux-containers-system.html
 
 [Podman systemd units en Kubernetes manifests >>>](09-systemd-units-kube-manifests.md)

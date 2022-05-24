@@ -2,8 +2,7 @@
 
 ## Netwerken
 Containers draaien standaard afgezonderd in virtuele netwerken, binnen deze netwerken kunnen containers elkaar bereiken op basis van naam.  
-Deze netwerken hebben hun eigen netwerk subnet en er zijn allerlei andere opties in te stellen.
-
+Deze netwerken hebben hun eigen netwerk subnet en er zijn allerlei andere opties in te stellen.  
 Er is één default netwerk aanwezig, namelijk het `podman` netwerk, deze is niet te verwijderen om te zorgen dat er altijd een netwerk beschikbaar is .
 
 ## Poorten van buiten bereikbaar maken
@@ -25,6 +24,19 @@ Je kan in Podman ook named volumes maken die je aan containers knoopt, data voor
 Een nieuw volume kan je aanmaken met `podman volume create <naam>`, dit volume kan je bij het starten van een container aankoppelen zoals bijvoorbeeld met `podman run --detach --volume <volumenaam>:/home/testvolume:ro nginx`  
 Wanneer je `podman volume rm <naam>` uitvoert zal dit niet mogelijk zijn omdat deze in gebruik is, wanneer je de container verwijdert zal het volume er nog steeds staan en kan deze weer opnieuw gebruikt worden.
 
+# Nginx voorbeeld
+Voorbeeld hieronder maakt gebruik van een simpele folder met een nginx Hallo Wereld index.html die read-only wordt gemount
+```sh
+podman run --name nginx --detach --volume $PWD/examples/nginx/www:/usr/share/nginx/html:ro --publish 8080:80 nginx
+```
+Wanneer je een tweede interactieve container opstart met dezelfde map gemount in rw.
+```sh
+podman run --name nginx-terminal --rm --tty --interactive --volume $PWD/examples/nginx/www:/usr/share/nginx/html:rw --entrypoint /bin/bash nginx
+```
+Dan kan je binnen deze container de inhoud van de index.html aanpassen terwijl de andere container draait.
+```sh
+echo "Dit is andere tekst" > /usr/share/nginx/html/index.html
+```
 # Exporteren/Importeren/Mounten/Kopieren
 Volumes kunnen net als volledige containers worden geexporteerd naar tarballs en terug geimporteerd worden.  
 Daarnaast is het ook mogelijk om checkpoints te maken van draaiende containers of data naar en vanuit draaiende containers te kopieren.  

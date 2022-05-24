@@ -1,3 +1,4 @@
+version: "3.9"  # optional since v1.27.0
 services:
   webserver:
     image: nginx
@@ -6,6 +7,8 @@ services:
     networks:
       - frontend
       - backend
+    volumes:
+      - logvolume01:/var/log
   database:
     image: mariadb
     networks:
@@ -15,3 +18,5 @@ services:
 networks:
   frontend: {}
   backend: {}
+volumes:
+  logvolume01: {}

@@ -1,8 +1,8 @@
 # Dockerfiles
 
-Je kan zelf container images bouwen, dit doe je met een bouw manifest hierin geef je aan hoe de container er uit moet zien.
-
-De filename voor deze manifests is `Dockerfile`, hierin plaats je de instructies die door Docker of in ons geval Podman worden uitgevoerd.
+Je kan zelf container images bouwen, dit doe je met een bouw manifest hierin geef je aan hoe de container er uit moet zien.  
+De filename voor deze manifests is `Dockerfile`, hierin plaats je de instructies die door Docker of in ons geval Podman worden uitgevoerd.  
+Iedere opdracht die in een Dockerfile beschreven staat maakt een losse layer aan binnen het container image, daarom zie je ook dat er veel van oneliners gebruik gemaakt wordt om de complexiteit van het aantal layers te beperken.
 
 ## Simpele nginx container
 Als eerste hebben we een geprepareerde `Dockerfile` klaarstaan in `examples/nginx-container`  
@@ -16,12 +16,10 @@ De container kan je bouwen door in de directory waar de `Dockerfile` staat de vo
 Na het bouwen zal je zien dat deze verschijnt in de lijst van container images (`podman image ls`), deze zal als registry naam `localhost`
 
 ## Starten container
-
 Deze container kunnen we nu ook starten door `podman run --detach --publish 8080:80 localhost/workshop/nginx` uit te voeren.  
 Met `podman container ls` zal je zien dat deze container actief is, hij heeft een random containernaam gekregen en hostpoort 8080 is doorgelusd naar containerpoort 80
 
 ## Configureren (issues op Mac OS met mount)
-
 Meestal wil je ook nginx configureren, het beste is om deze dan te mounten op het moment dat je de container gaat draaien maar we willen dan wel even de bestaande configuratie lenen.  
 Deze kopieren we dan gewoon lekker uit de draaiende container naar onze lokale opslag met `podman cp <containernaam>:/etc/nginx/nginx.conf nginx.conf`
 

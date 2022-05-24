@@ -11,8 +11,7 @@ Voeg voor het mogelijk maken van automatische updates in podman het volgende toe
 Hierna is het mogelijk om met de `podman auto-update` opdracht alle containers met dit label automatisch te updaten.  
 Met `podman auto-update --dry-run` kan je zien of er updates voor containers beschikbaar zijn.
 
-Het updaten wordt ook automatisch uitgevoerd door de `podman-auto-update.service` systemd unit, deze kan met de `podman-auto-update.timer` ingepland worden, de planning staat dan standaard op dagelijks (middernacht) ingesteld.
-
-Mocht het updaten niet goed verlopen kan er ook een rollback worden gedaan met `podman auto-update --rollback`
+Het updaten wordt ook automatisch uitgevoerd door de `podman-auto-update.service` systemd unit, deze kan met de `podman-auto-update.timer` ingepland worden, de planning staat dan standaard op dagelijks (middernacht) ingesteld.  
+Mocht het updaten niet goed verlopen kan er ook een rollback worden gedaan naar het voorgaande image met `podman auto-update --rollback`
 
 [Rootless containers >>>](11-rootless.md)
